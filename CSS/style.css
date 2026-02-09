@@ -1,8 +1,13 @@
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 body {
@@ -17,6 +22,9 @@ nav {
     align-items: center;
     padding: 15px 10%;
     background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -37,6 +45,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #22c55e;
 }
 
 /* HERO */
@@ -69,6 +82,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16a34a;
 }
 
 /* SECTIONS */
@@ -90,6 +108,12 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 /* BOOKING */
@@ -112,7 +136,7 @@ footer {
     padding: 15px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -124,6 +148,11 @@ footer {
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #16a34a;
 }
 
 /* MOBILE RESPONSIVE */
